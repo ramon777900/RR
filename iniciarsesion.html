@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Mismos metadatos y estilos que tu página principal -->
+  <title>Iniciar Sesion - RR</title>
+</head>
+<body>
+  <!-- Mismo header y navegación si lo deseas -->
+  
+  <main class="main-container" style="max-width: 500px; margin: 5rem auto;">
+    <h2 class="section-title">Iniciar Sesion</h2>
+    <form id="loginForm" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+      <div class="form-group">
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #95a5a6; border-radius: 4px;">
+      </div>
+      <div class="form-group">
+        <label for="password">Contrasena</label>
+        <input type="password" id="password" required style="width: 100%; padding: 0.8rem; border: 1px solid #95a5a6; border-radius: 4px;">
+      </div>
+      <button type="submit" class="login-btn" style="width: 100%; padding: 0.8rem; background-color: #e74c3c; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;">
+        Iniciar Sesion
+      </button>
+    </form>
+  </main>
+
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    if (email && password) { // Validación básica
+      alert('Inicio de sesion exitoso. Seras redirigido.');
+      window.location.href = 'pagina.html';
+    } else {
+      alert('Por favor completa todos los campos.');
+    }
+  });
+</script>
+</body>
+</html>
