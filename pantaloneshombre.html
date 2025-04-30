@@ -542,6 +542,20 @@
   }
 
 </style>
+<style>
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  width: 50px; /* Ajusta este valor según el tamaño que desees */
+  height: auto;
+  border-radius: 50%; /* Opcional: si quieres que la imagen sea redonda */
+}
+</style>
 </head>
 <body>
     
@@ -570,11 +584,13 @@
 
   <!-- Header -->
   <header>
-    <div class="header-content">
-      <div class="logo">RR</div>
-      <div class="slogan">Ropa de todo tipo</div>
+  <div class="header-content">
+    <div class="logo-container">
+      <img src="hola.jpg" alt="Logo RR" class="logo-img">
     </div>
-  </header>
+    <div class="slogan">Ropa de todo tipo</div>
+  </div>
+</header>
 
   <!-- Navegación -->
   <nav>
