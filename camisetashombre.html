@@ -442,98 +442,85 @@
     }
   </style>
   <style>
-    /* Estilo del botón de menú */
-    #menuButton {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      width: 50px;
-      height: 50px;
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      font-size: 24px;
-      cursor: pointer;
-      z-index: 1002;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
+  /* Estilo del botón de menú */
+  #menuButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002; /* Más alto que todo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
 
-    #menuButton:hover {
-      background-color: #e74c3c;
-      transform: scale(1.1);
-    }
+  #menuButton:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+  }
 
-    /* Estilo del menú lateral */
-    #sideMenu {
-      position: fixed;
-      top: 0;
-      left: -300px;
-      width: 280px;
-      height: 100%;
-      background-color: white;
-      box-shadow: 2px 0 15px rgba(0,0,0,0.2);
-      z-index: 1001;
-      transition: left 0.3s ease;
-      padding: 70px 20px 20px;
-      overflow-y: auto;
-    }
+  /* Estilo del menú lateral */
+  #sideMenu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+    z-index: 1001; /* Debajo del botón pero encima de todo lo demás */
+    transition: left 0.3s ease;
+    padding: 70px 20px 20px; /* Espacio para el botón */
+    overflow-y: auto;
+  }
 
-    /* Estilo del fondo oscuro */
-    #menuOverlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 1000;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
+  /* Estilo del fondo oscuro */
+  #menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000; /* Debajo del menú pero encima del contenido */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
 
-    /* Clase activa para mostrar menú */
-    .menu-active #sideMenu {
-      left: 0;
-    }
+  /* Clase activa para mostrar menú */
+  .menu-active #sideMenu {
+    left: 0;
+  }
 
-    .menu-active #menuOverlay {
-      opacity: 1;
-      visibility: visible;
-    }
+  .menu-active #menuOverlay {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    /* Estilos para las opciones del menú */
-    #sideMenu h3 {
-      color: var(--primary);
-      margin: 1.5rem 0 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #eee;
-    }
+  /* Asegurar que otros elementos no interfieran */
+  header, nav, .main-container, footer {
+    position: relative;
+    z-index: auto !important; /* Resetear cualquier z-index previo */
+  }
+</style>
+<style>
+  #imagen{
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+  }
 
-    .menu-option {
-      padding: 0.8rem 1rem;
-      margin: 0.3rem 0;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .menu-option:hover {
-      background-color: var(--bg-light);
-      color: var(--secondary);
-    }
-
-    /* Asegurar que otros elementos no interfieran */
-    header, nav, .main-container, footer {
-      position: relative;
-      z-index: auto !important;
-    }
-  </style>
+</style>
 <style>
   #imagen1{
     border-radius: 5px;
@@ -780,7 +767,7 @@
           <!-- Producto 10 -->
          <div class="product-card">
           <center>
-          <img src="IMG_20250402_014623854~2 (1).jpg" id="imagen1">
+          <img src="IMG_20250402_014623854~2 .jpg" id="imagen1">
         </center>
           <div class="product-info">
             <h3 class="product-title">Camiseta con diseño</h3>
@@ -904,4 +891,3 @@
   </script>
 </body>
 </html>
-        
