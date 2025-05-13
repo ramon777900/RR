@@ -522,9 +522,23 @@
   }
 
 </style>
+<style>
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  width: 50px; /* Ajusta este valor según el tamaño que desees */
+  height: auto;
+  border-radius: 50%; /* Opcional: si quieres que la imagen sea redonda */
+}
+</style>
 </head>
 <body>
-  <!-- Sidebar -->
+<!-- Sidebar -->
   <button id="menuButton">☰</button>
   <div id="menuOverlay"></div>
   <aside id="sideMenu">
@@ -538,8 +552,8 @@
     <div><a href="sudaderashombre.html" class="nav-link">Sudaderas para hombre</a></div>
     
     <h3>Mi Cuenta</h3>
-    <div class="menu-option">Iniciar sesión</div>
-    <div class="menu-option">Registrarse</div>
+   <div><a href="iniciarsesion.html" class="nav-link">Iniciar sesión</a></div>
+    <div><a href="registro.html" class="nav-link">Registrarse</a></div>
   </aside>
 
   <!-- Botón flotante del carrito -->
@@ -550,11 +564,14 @@
 
   <!-- Header -->
   <header>
-    <div class="header-content">
-      <div class="logo">RR</div>
-      <div class="slogan">Ropa de todo tipo</div>
+  <div class="header-content">
+    <div class="logo-container">
+      <img src="hola.jpg" alt="Logo RR" class="logo-img">
     </div>
-  </header>
+    <div class="slogan">Ropa de todo tipo</div>
+  </div>
+</header>
+
 
   <!-- Navegación -->
   <nav>
@@ -759,7 +776,7 @@
               <span class="current-price">$29.99</span>
               <span class="original-price">$39.99</span>
             </div>
-            <button class="add-to-cart" onclick="window.location.href='carrito.html'">
+            <button class"add-to-cart" onclick="window.location.href='carrito.html'">
               <span>Agregar</span>
               <span>+</span>
             </button>
