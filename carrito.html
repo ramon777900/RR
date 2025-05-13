@@ -605,6 +605,44 @@
   border-radius: 50%; /* Opcional: si quieres que la imagen sea redonda */
 }
 </style>
+<style>
+  /* (Todos tus estilos actuales...) */
+
+  /* ESTILOS ESPECÍFICOS PARA EL MENÚ LATERAL (#sideMenu) */
+  #sideMenu {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+
+  #sideMenu h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  #sideMenu .nav-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+
+  #sideMenu .nav-link:hover {
+    color: #e74c3c;
+    background-color: transparent;
+  }
+
+  #sideMenu div {
+    margin-bottom: 0.3rem;
+  }
+</style>  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -820,7 +858,7 @@
       });
 
       // Inicializar contador
-      updateCartCoount();
+      updateCartCount();
     });
   </script>
 
