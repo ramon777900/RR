@@ -593,7 +593,7 @@
 </style>
 <style>
 .logo-container {
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -606,42 +606,47 @@
 }
 </style>
 <style>
-  /* (Todos tus estilos actuales...) */
+  /* === Estilo exacto para el menú lateral (como la imagen) === */
+#sideMenu {
+  background-color: white; /* Fondo blanco */
+  padding: 20px 15px; /* Más espacio interno */
+}
 
-  /* ESTILOS ESPECÍFICOS PARA EL MENÚ LATERAL (#sideMenu) */
-  #sideMenu {
-    background-color: #f8f9fa;
-    padding: 20px;
-  }
+/* Títulos "Categorías" y "Mi Cuenta" */
+#sideMenu h3 {
+  color: #555; /* Color gris oscuro */
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 1rem 0 0.5rem 0; /* Espaciado ajustado */
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee; /* Línea sutil debajo */
+  font-weight: 600; /* Negrita */
+  letter-spacing: 0.5px;
+}
 
-  #sideMenu h3 {
-    color: #2c3e50;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    margin: 1.5rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-  }
+/* Contenedor de cada enlace (div) */
+#sideMenu div {
+  margin-bottom: 0.3rem; /* Espacio entre enlaces */
+}
 
-  #sideMenu .nav-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    padding: 0.5rem 0;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-  }
+/* Enlaces (INICIO, PANTALONES...) */
+#sideMenu .nav-link {
+  display: block;
+  text-decoration: none;
+  color: #333; /* Color negro suave */
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0; /* Padding vertical reducido */
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
+  font-weight: 500; /* Grosor medio */
+}
 
-  #sideMenu .nav-link:hover {
-    color: #e74c3c;
-    background-color: transparent;
-  }
-
-  #sideMenu div {
-    margin-bottom: 0.3rem;
-  }
+/* Efecto hover */
+#sideMenu .nav-link:hover {
+  color: #e74c3c; /* Rojo/negro al pasar el mouse */
+  background-color: transparent; /* Sin fondo */
+}
 </style>  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
