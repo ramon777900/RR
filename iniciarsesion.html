@@ -125,5 +125,31 @@
     }
   });
 </script>
+    <script>
+  const menuButton = document.getElementById('menuButton');
+  const sideMenu = document.getElementById('sideMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const body = document.body;
+
+  function toggleMenu() {
+    body.classList.toggle('menu-active');
+    menuButton.textContent = body.classList.contains('menu-active') ? '✕' : '☰';
+    
+    // Bloquear scroll del body cuando el menú está abierto
+    if(body.classList.contains('menu-active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  menuButton.addEventListener('click', toggleMenu);
+  menuOverlay.addEventListener('click', toggleMenu);
+  
+  // Cerrar menú al hacer clic en opciones
+  document.querySelectorAll('#sideMenu .menu-option').forEach(option => {
+    option.addEventListener('click', toggleMenu);
+  });
+</script>
 </body>
 </html>
