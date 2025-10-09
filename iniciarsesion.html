@@ -76,22 +76,9 @@
     z-index: auto !important; /* Resetear cualquier z-index previo */
   }
 </style>
-</head>
-<body>
-   <button id="menuButton">☰</button>
-  <div id="menuOverlay"></div>
-  <aside id="sideMenu">
-    <!-- Contenido de menú -->
-    <h3>Categorías</h3>
-    <div><a href="pagina.html" class="nav-link">Inicio</a></div>
-    <div><a href="pantaloneshombre.html" class="nav-link">Pantalones para hombre</a></div>
-    <div><a href="camisetashombre.html" class="nav-link">Camisetas para hombre</a></div>
-    <div><a href="pantalonesmujer.html" class="nav-link">Pantalones para mujer</a></div>
-    <div><a href="blusasmujer.html" class="nav-link">Blusas para mujer</a></div>
-    <div><a href="sudaderashombre.html" class="nav-link">Sudaderas para hombre</a></div>
-  <!-- Mismo header y navegación si lo deseas -->
-  
-  <main class="main-container" style="max-width: 500px; margin: 5rem auto;">
+
+  <style>
+    <main class="main-container" style="max-width: 500px; margin: 5rem auto;">
     <h2 class="section-title">Iniciar Sesion</h2>
     <form id="loginForm" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
       <div class="form-group">
@@ -107,6 +94,22 @@
       </button>
     </form>
   </main>
+</style>
+</head>
+<body>
+   <button id="menuButton">☰</button>
+  <div id="menuOverlay"></div>
+  <aside id="sideMenu">
+    <!-- Contenido de menú -->
+    <h3>Categorías</h3>
+    <div><a href="pagina.html" class="nav-link">Inicio</a></div>
+    <div><a href="pantaloneshombre.html" class="nav-link">Pantalones para hombre</a></div>
+    <div><a href="camisetashombre.html" class="nav-link">Camisetas para hombre</a></div>
+    <div><a href="pantalonesmujer.html" class="nav-link">Pantalones para mujer</a></div>
+    <div><a href="blusasmujer.html" class="nav-link">Blusas para mujer</a></div>
+    <div><a href="sudaderashombre.html" class="nav-link">Sudaderas para hombre</a></div>
+  <!-- Mismo header y navegación si lo deseas -->
+
 
   <script>
   document.getElementById('loginForm').addEventListener('submit', function(e) {
